@@ -17,7 +17,7 @@ spec:
         harness.io/serviceRef: '{{harness_service}}'
         harness.io/buildRef: '{{image_tag}}'
     spec:
-      project: default
+      project: <PROJECT>
       source:
         repoURL: <REPO_URL>
         targetRevision: HEAD
