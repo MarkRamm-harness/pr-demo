@@ -74,7 +74,7 @@ k3d cluster create pr-quickstart \
 We'll add Harness GitOps Clusters for the two target clusters where we want to add our application.
 
 1. Create a new Harness GitOps Cluster for your dev cluster.
-2. Name the cluster **engineering-dev**.
+2. Name the cluster **dev**.
 3. In **GitOps Agent**, select the GitOps Agent you added earlier.
    
    ![](./static/harness-git-ops-application-set-tutorial-30.png)
