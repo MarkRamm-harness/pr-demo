@@ -1,0 +1,6 @@
+{
+  "cluster_name" : "example",
+  "server_address" : "",
+  "image_tag" : "latest",
+  "env" : ""
+}
