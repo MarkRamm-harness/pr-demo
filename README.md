@@ -54,8 +54,8 @@ k3d cluster create pr-quickstart \
 ### Installing GitOps Agent
 
 1. In **GitOps**, click **Settings**, and then **Clusters**.
-   
-   ![](./static/harness-git-ops-application-set-tutorial-28.png)
+
+  ![image](https://github.com/mansong1/pr-demo/assets/7550833/373da8be-50e1-4253-8d23-69b18a1512b0)
 
 2. Click **New Cluster**.
 3. In **Name**, enter the name **appset-example**.
