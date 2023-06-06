@@ -85,18 +85,13 @@ We'll add Harness GitOps Clusters for the two target clusters where we want to a
    
    ![](./static/harness-git-ops-application-set-tutorial-31.png)
 
-6. In **Authentication**, use the authentication method you prefer. In this tutorial, we use the `default` namespace `service-account` token.
+6. In **Authentication**, use the authentication method you prefer. In this tutorial, we use the `se-name` namespace `service-account` token.
 7. Click **Save and Continue**. The GitOps Cluster is verified.
 8. Click **Finish**.
-9.  Repeat the process for the **Prod** cluster.
-	1. Name the cluster **engineering-prod**.
-	2. Use the same Agent.
-	3. For **Master URL**, ensure that you use the `https://` scheme.
-	4. Use whatever authentication method you want.
 
-When you're done, you will have three Harness GitOps Clusters: 1 for the GitOps Agent and two for the target clusters.
+  ![Screenshot 2023-06-06 at 15 30 34](https://github.com/mansong1/pr-demo/assets/7550833/cf41f238-43b7-4eab-ae2c-c6d5d36622da)
 
-![](./static/harness-git-ops-application-set-tutorial-32.png)
+
 
 You might see a Warning status. This status simply indicates that nothing has been deployed to the cluster yet.
 
