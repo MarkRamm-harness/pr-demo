@@ -65,7 +65,7 @@ k3d cluster create pr-quickstart \
 7. Click **Save and Continue**.
    The connections is verified.
    
-   ![](./static/harness-git-ops-application-set-tutorial-29.png)
+   ![image](https://github.com/mansong1/pr-demo/assets/7550833/c20442e1-dc07-4414-9a98-3c61814eaffc)
 
 8. Click **Finish**.
 
@@ -77,7 +77,8 @@ We'll add Harness GitOps Clusters for the two target clusters where we want to a
 2. Name the cluster **dev**.
 3. In **GitOps Agent**, select the GitOps Agent you added earlier.
    
-   ![](./static/harness-git-ops-application-set-tutorial-30.png)
+   ![Screenshot 2023-06-06 at 15 26 23](https://github.com/mansong1/pr-demo/assets/7550833/95f0cc5f-125e-4601-9534-6c196668cb84)
+
 
 4. In **Details**, select **Specify Kubernetes Cluster URL and credentials**.
 5. In **Master URL**, enter the Endpoint URL for the target cluster (you can use `kubectl cluster-info` or your cloud console). Ensure that you use the `https://` scheme.Here's an example:
