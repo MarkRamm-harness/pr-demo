@@ -28,11 +28,11 @@ spec:
           - mansong/guestbook:{{image_tag}}
       destination:
         server: '{{server_address}}'
-        namespace: 'guestbook-{{env}}'
+        namespace: <SE_NAMESPACE>
       syncPolicy:
         automated:
           selfHeal: true
         syncOptions:
         - PruneLast=true
-        - CreateNamespace=true
+        - CreateNamespace=false
         - ApplyOutOfSyncOnly=true
