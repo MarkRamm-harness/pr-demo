@@ -1,0 +1,38 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: guestbook
+spec:
+  generators:
+  - git:
+      repoURL: <REPO_URL>
+      revision: HEAD
+      files:
+      - path: "cluster-config/**/config.json"
+  template:
+    metadata:
+      name: '{{cluster_name}}-guestbook'
+      labels:
+        harness.io/envRef: '{{env}}'
+        harness.io/serviceRef: '{{harness_service}}'
+        harness.io/buildRef: '{{image_tag}}'
+    spec:
+      project: default
+      source:
+        repoURL: <REPO_URL>
+        targetRevision: HEAD
+        path: "base"
+        kustomize:
+          namePrefix: '{{env}}-'
+          images:
+          - mansong/guestbook:{{image_tag}}
+      destination:
+        server: '{{server_address}}'
+        namespace: 'guestbook-{{env}}'
+      syncPolicy:
+        automated:
+          selfHeal: true
+        syncOptions:
+        - PruneLast=true
+        - CreateNamespace=true
+        - ApplyOutOfSyncOnly=true
