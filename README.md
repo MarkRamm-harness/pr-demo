@@ -81,9 +81,10 @@ We'll add Harness GitOps Clusters for the two target clusters where we want to a
 
 
 4. In **Details**, select **Specify Kubernetes Cluster URL and credentials**.
-5. In **Master URL**, enter the Endpoint URL for the target cluster (you can use `kubectl cluster-info` or your cloud console). Ensure that you use the `https://` scheme.Here's an example:
+5. In **Master URL**, enter the Endpoint URL for the target cluster (you can use `kubectl cluster-info` or your cloud console). Ensure that you use the `https://` scheme. Here's an example:
    
-   ![](./static/harness-git-ops-application-set-tutorial-31.png)
+   <img width="648" alt="Screenshot 2023-06-06 at 15 35 40" src="https://github.com/mansong1/pr-demo/assets/7550833/d623d67d-c1d0-4650-a17d-6f501cfbf0af">
+
 
 6. In **Authentication**, use the authentication method you prefer. In this tutorial, we use the `se-name` namespace `service-account` token.
 7. Click **Save and Continue**. The GitOps Cluster is verified.
