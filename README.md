@@ -55,7 +55,7 @@ k3d cluster create pr-quickstart \
 
 1. In **GitOps**, click **Settings**, and then **Clusters**.
 
-  ![image](https://github.com/mansong1/pr-demo/assets/7550833/373da8be-50e1-4253-8d23-69b18a1512b0)
+   ![image](https://github.com/mansong1/pr-demo/assets/7550833/373da8be-50e1-4253-8d23-69b18a1512b0)
 
 2. Click **New Cluster**.
 3. In **Name**, enter the name **appset-example**.
