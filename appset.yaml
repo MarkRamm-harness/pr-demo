@@ -28,7 +28,7 @@ spec:
           - mansong/guestbook:{{image_tag}}
       destination:
         server: '{{server_address}}'
-        namespace: <SE_NAMESPACE>
+        namespace: '{{env}}-guestbook'
       syncPolicy:
         automated:
           selfHeal: true
